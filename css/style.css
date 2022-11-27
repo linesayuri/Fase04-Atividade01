@@ -1,0 +1,592 @@
+/*  */
+/* Configurações Gerais */
+
+:root {
+    --mainColorBG: #F0F7FA;
+    --mainColorBGContent: #fff;
+    --mainColor: #0D3444;
+    --secundaryColor: #CCE8F5;
+    --tercearyColor: #99D2EA;
+    --fontColor: #000;
+    --fontColorida: #0D3444;
+    --fontPadrao: 'Inter', sans-serif;
+    --imagemlogo: url(/images/logo_traveller_fundo_transparente.png);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&display=swap');
+
+
+body {
+    background-color: var(--mainColorBG);
+    font-family: var(--fontPadrao);
+    color: var(--fontColor);
+}
+
+
+a {
+    text-decoration: none;
+    color: #0D3444;
+    font-family: var(--fontPadrao);
+}
+
+/*Fim- Configurações Gerais */
+
+
+/* Header */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background-color: var(--secundaryColor);
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    padding: 10px 5%;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #000;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    background-color: var(--secundaryColor);
+}
+
+nav ul li {
+    display: inline;
+    position: relative;
+    width: 200px;
+}
+
+nav ul li a {
+    margin: 20px;
+    font-family: 'Inter', sans-serif;
+    color: var(--mainColor);
+    font-weight: 700;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+}
+
+nav ul li:hover ul {
+    display: block;
+    position: absolute;
+}
+
+
+.logo {
+    background-image: var(--imagemlogo);
+    background-size: cover;
+    width: 200px;
+    height: 50px;
+}
+
+/* Fim Header */
+
+/* menu acessbildiade */
+
+
+/* menu acessbildiade */
+
+/* Início do container principal side bar e main container */
+
+.container {
+    /* height: 770px; */
+    width: 100%;
+    display: flex;
+    margin-top: 5%;
+    justify-content: space-around;
+}
+
+.sidebar {
+    height: 700px;
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: var(--secundaryColor);
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    align-items: center;
+
+}
+
+
+
+.main-container {
+    background-color: var(--mainColorBGContent);
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    align-items: center;
+    height: fit-content;
+    padding: 30px;
+    box-sizing: border-box;
+    padding-bottom: 10%
+}
+
+/* Fim do container principal side bar e main container */
+
+/* Motor de busca*/
+
+#buscar {
+    background-color: var(--mainColorBGContent);
+    color: var(--fontColor);
+    border-radius: 10px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    height: 30px;
+    font-family: var(--fontPadrao);
+}
+
+#botoesAcessibilidade {
+    background-color: var(--secundaryColor);
+    color: var(--fontColor);
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    height: 20px;
+    margin-left: -20px;
+    font-family: var(--fontPadrao);
+}
+
+#botoesAcessibilidade:hover {
+    background-color: var(--tercearyColor);
+    border-radius: 10px;
+}
+
+#botoesmenu {
+    background-color: var(--secundaryColor);
+    color: var(--fontColor);
+    border-radius: 10px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    height: 20px;
+    font-family: var(--fontPadrao);
+}
+
+
+.inputBusca {
+    height: 100px;
+    background-color: var(--mainColorBGContent);
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.inputBusca::placeholder {
+    color: var(--fontColor);
+}
+
+#nota {
+    accent-color: var(--fontColorida)
+}
+
+#distancia {
+    accent-color: var(--fontColorida);
+}
+
+#tipodeviagem1 {
+    accent-color: var(--fontColorida);
+}
+
+#tipodeviagem2 {
+    accent-color: var(--fontColorida);
+}
+
+#tipodeviagem3 {
+    accent-color: var(--fontColorida);
+}
+
+#date {
+    border: 1px solid var(--tercearyColor);
+    border-radius: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    height: 30px;
+    width: 100px;
+    margin-bottom: 15px;
+    color: var(--mainColor);
+    font-weight: 500;
+}
+
+.textos {
+    color: var(--fontColor);
+    font-weight: 500;
+}
+
+
+/* Pontos Cinematográficos Section */
+
+.pontosCinematograficosItem {
+    width: 395px;
+    height: 372px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    background-color: var(--mainColorBG);
+}
+
+.pontosCinematograficos {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    height: 100%;
+    margin-top: 15px;
+}
+
+.pontosCinematograficosItem .pontoCinematograficoImage {
+    background-size: cover;
+    height: 50%;
+    width: 65%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 10px
+}
+
+.pontosCinematograficosItem .pontoCinematograficoImageInternal {
+    background-size: cover;
+    height: 30em;
+    width: 10em;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 10px
+}
+
+.pontoCinematograficoDetails {
+    background-color: var(--secundaryColor);
+    height: 35px;
+    width: 100%;
+    display: inline-table;
+    margin: 0 auto;
+    border-radius: 10px
+}
+
+.pontoCinematograficoDetailsInternal {
+    background-color: var(--secundaryColor);
+    height: 35px;
+    width: 70%;
+    display: inline-table;
+    margin: 0 auto;
+    border-radius: 10px
+}
+
+.detailsSection {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.pontoCinematograficoTipo {
+    font-size: 14px;
+}
+
+.pontoCinematograficoAberto {
+    font-size: 14px;
+}
+
+.pontoCinematograficoRating {
+    float: right;
+}
+
+.pontoCinematograficoRating i {
+    margin: 10px 5px 10px 2px;
+}
+
+.pontoCinematograficoTipoIcon {
+    width: 15px;
+    height: 15px;
+    ;
+    border-radius: 50px;
+    float: left;
+    margin: 10px 5px 10px 10px;
+}
+
+.pontoCinematograficoTipoText {
+    margin: 10px;
+    float: left;
+    line-height: 15px;
+}
+
+.pontoCinematograficoAbertoIcon {
+    width: 15px;
+    height: 15px;
+    ;
+    border-radius: 50px;
+    background-color: #34B558;
+    float: left;
+    margin: 10px 5px 10px 10px;
+}
+
+.fechadoIcon {
+    background-color: #B53434
+}
+
+.pontoCinematograficoAbertoText {
+    margin: 10px;
+    float: left;
+    line-height: 15px;
+}
+
+.pontoCinematograficoContent {
+    margin: 0 auto;
+    width: 300px;
+    margin-top: 8px;
+    padding: 15px 10px;
+}
+
+.pontoCinematograficoTitle {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--fontColor)
+}
+
+.pontoCinematograficoSubtitle {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--fontColor)
+}
+
+.pontoCinematograficoResumo {
+    font-size: 12px;
+    color: var(--fontColor)
+}
+
+.pontoCinematograficoListas {
+    font-size: 12px;
+    color: var(--fontColorida)
+}
+
+.tipoParque {
+    background-color: #B739BA;
+}
+
+.tipoMuseu {
+    background-color: #3965BA;
+}
+
+.tipoOutros {
+    background-color: #879729;
+}
+
+.tipoTeatro {
+    background-color: #ba3960;
+}
+
+/* Fim Pontos Cinematográficos Section */
+
+
+
+
+
+
+/* Internal Page */
+
+#internalImage {
+    width: 50%;
+}
+
+#pontosCinematograficosInternal {
+    width: 100%;
+    margin-bottom: 20px;
+    height: fit-content;
+}
+
+#contentInternal {
+    width: 100%;
+    margin-top: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#resumoInternal {
+    width: 100%;
+    font-size: 15px;
+    margin-bottom: 50px
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 500px;
+    width: 100%;
+}
+
+.mapouter {
+    position: relative;
+    text-align: center;
+    height: 500px;
+    width: 100%;
+}
+
+#contentInternal p {
+    font-size: 18px;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.pontoCinematograficoText {
+    margin: 10px;
+    float: left;
+    line-height: 15px;
+}
+
+.pontoCinematograficoText span {
+    font-weight: 600;
+}
+
+.pontoCinematograficoPetIcon {
+    width: 15px;
+    height: 15px;
+    ;
+    border-radius: 50px;
+    background-color: #34B558;
+    float: left;
+    margin: 10px 5px 10px 10px;
+}
+
+.pontoCinematograficoPetIcon {
+    width: 15px;
+    height: 15px;
+    ;
+    border-radius: 50px;
+    background-color: #34B558;
+    float: left;
+    margin: 10px 5px 10px 10px;
+}
+
+.noPetIcon {
+    background-color: #B53434
+}
+
+/* fim Internal page */
+
+.footer_principal {
+    text-align: center;
+}
+
+
+
+
+
+/* Botão Acessar Site */
+
+.acesseSiteWrapper {
+    width: 100%;
+    text-align: center;
+    margin: 60px 20px 20px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.acesseSiteWrapper a {
+    line-height: 45px;
+}
+
+.acesseSite {
+    background-color: #0D3445;
+    width: 15em;
+    color: #FFFFFF;
+    border-radius: 10px;
+    height: 3em
+}
+
+/* Fim Botão Acessar Site */
+
+/* comentarios */
+
+#comentarioInternal {
+    background-color: var(--secundaryColor);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    align-items: center;
+    height: fit-content;
+    padding: 10px;
+    box-sizing: border-box;
+    height: 14%;
+}
+
+.inputComentario {
+    width: 90%;
+    align-items: center;
+    height: fit-content;
+    padding: 30px;
+    box-sizing: border-box;
+    height: 13%;
+}
+
+#enviar {
+    background-color: var(--secundaryColor);
+    color: var(--mainColor);
+    border-radius: 10px;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    height: 4em;
+    width: 9em;
+    vertical-align: top;
+}
+
+.enviarWrapper {
+    text-align: right;
+    margin-right: 5%;
+}
+
+comentarios {
+    text-align: center;
+    display: block;
+    margin-bottom: 5em;
+    width: 100%;
+}
+
+.comentariosRegistrados {
+    margin-top: 30px;
+    margin-bottom: 10%;
+}
+
+.notasComentarios {
+    text-align: left;
+    margin-left: 5%;
+    margin-bottom: 1%;
+}
+
+/* Acessibilidade */
+
+#font-label {
+    font-size: 30px;
+}
+
+.funcoesAcessibilidade {
+    text-align: right;
+}
+
+.teste {
+    background-color: var(--mainColor);
+}
