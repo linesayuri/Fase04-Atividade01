@@ -1,135 +1,23 @@
-// function aumentoFonte() {
-//     var el = document.getElementById('fontLabel');
-//     var actualFontSize = window.getComputedStyle(el, null).getPropertyValue('font-size');
-//     document.getElementById("fontLabel").style.fontSize = `${Number(actualFontSize.replace('px','')) + 1}px`;
-// }
+function gerarConteudo() {
 
-// function diminuiFonte() {
-//     var el = document.getElementById('fontLabel');
-//     var actualFontSize = window.getComputedStyle(el, null).getPropertyValue('font-size');
-//     document.getElementById("fontLabel").style.fontSize = `${Number(actualFontSize.replace('px','')) - 1}px`;
-// }
-
-// controle do tamanho das fontes
-
-function aumentoFonte() {
-    var fSize = document.getElementsByTagName('div');
-    var fSize2 = document.getElementsByTagName('a');
-    var fSize3 = document.getElementsByTagName('h1');
-    var fSize4 = document.getElementsByTagName('p');
-    var fSize5 = document.getElementsByTagName('input');
-    var fSize6 = document.getElementsByTagName('span');
-    for(let i = 0; i < fSize.length; i++) {
-        var actualFontSize = window.getComputedStyle(fSize[i], null).getPropertyValue('font-size');
-        fSize[i].style.fontSize = `${Number(actualFontSize.replace('px','')) + 1}px`;
-
-    }
-    for(let i = 0; i < fSize2.length; i++) {
-        var actualFontSize2 = window.getComputedStyle(fSize2[i], null).getPropertyValue('font-size');
-        fSize2[i].style.fontSize = `${Number(actualFontSize2.replace('px','')) + 1}px`;
-
-    }
-    for(let i = 0; i < fSize3.length; i++) {
-        var actualFontSize3 = window.getComputedStyle(fSize3[i], null).getPropertyValue('font-size');
-        fSize3[i].style.fontSize = `${Number(actualFontSize3.replace('px','')) + 1}px`;
-
-    }
-    for(let i = 0; i < fSize4.length; i++) {
-        var actualFontSize4 = window.getComputedStyle(fSize4[i], null).getPropertyValue('font-size');
-        fSize4[i].style.fontSize = `${Number(actualFontSize4.replace('px','')) + 1}px`;
-
-    }
-
-    for(let i = 0; i < fSize5.length; i++) {
-        var actualFontSize5 = window.getComputedStyle(fSize5[i], null).getPropertyValue('font-size');
-        fSize5[i].style.fontSize = `${Number(actualFontSize5.replace('px','')) + 1}px`;
-
-    }
-    for(let i = 0; i < fSize6.length; i++) {
-        var actualFontSize6 = window.getComputedStyle(fSize6[i], null).getPropertyValue('font-size');
-        fSize6[i].style.fontSize = `${Number(actualFontSize6.replace('px','')) + 1}px`;
-
-    }
-}
-
-
-function diminuoFonte() {
-    var fSize = document.getElementsByTagName('div');
-    var fSize2 = document.getElementsByTagName('a');
-    var fSize3 = document.getElementsByTagName('h1');
-    var fSize4 = document.getElementsByTagName('p');
-    var fSize5 = document.getElementsByTagName('input');
-    var fSize6 = document.getElementsByTagName('span');
-    for(let i = 0; i < fSize.length; i++) {
-        var actualFontSize = window.getComputedStyle(fSize[i], null).getPropertyValue('font-size');
-        fSize[i].style.fontSize = `${Number(actualFontSize.replace('px','')) - 1}px`;
-
-    }
-    for(let i = 0; i < fSize2.length; i++) {
-        var actualFontSize2 = window.getComputedStyle(fSize2[i], null).getPropertyValue('font-size');
-        fSize2[i].style.fontSize = `${Number(actualFontSize2.replace('px','')) - 1}px`;
-
-    }
-    for(let i = 0; i < fSize3.length; i++) {
-        var actualFontSize3 = window.getComputedStyle(fSize3[i], null).getPropertyValue('font-size');
-        fSize3[i].style.fontSize = `${Number(actualFontSize3.replace('px','')) - 1}px`;
-
-    }
-    for(let i = 0; i < fSize4.length; i++) {
-        var actualFontSize4 = window.getComputedStyle(fSize4[i], null).getPropertyValue('font-size');
-        fSize4[i].style.fontSize = `${Number(actualFontSize4.replace('px','')) - 1}px`;
-
-    }
-    for(let i = 0; i < fSize5.length; i++) {
-        var actualFontSize5 = window.getComputedStyle(fSize5[i], null).getPropertyValue('font-size');
-        fSize5[i].style.fontSize = `${Number(actualFontSize5.replace('px','')) - 1}px`;
-
-    }
-    for(let i = 0; i < fSize6.length; i++) {
-        var actualFontSize6 = window.getComputedStyle(fSize6[i], null).getPropertyValue('font-size');
-        fSize6[i].style.fontSize = `${Number(actualFontSize6.replace('px','')) - 1}px`;
-
-    }
-}
-
-
-// controle do estilo de cores do site
-
-function ligaContraste() {
-document.documentElement.style.setProperty('--mainColorBG', '#242323');
-document.documentElement.style.setProperty('--mainColor', '#000');
-document.documentElement.style.setProperty('--secundaryColor', '#242323');
-document.documentElement.style.setProperty('--tercearyColor', '#000');
-document.documentElement.style.setProperty('--mainColorBGContent', '#000');
-document.documentElement.style.setProperty('--fontColor', '#fff');
-document.documentElement.style.setProperty('--fontColorida', '#fff');
-document.documentElement.style.setProperty('--imagemlogo','url(/images/logo_traveller_branco.png)'); 
-
-}
-
-
-function desligaContraste() {
-document.documentElement.style.setProperty('--mainColorBG', '#F0F7FA');
-document.documentElement.style.setProperty('--mainColor', '#0D3444');
-document.documentElement.style.setProperty('--secundaryColor', '#CCE8F5');
-document.documentElement.style.setProperty('--tercearyColor', '#99D2EA');
-document.documentElement.style.setProperty('--mainColorBGContent', '#fff');
-document.documentElement.style.setProperty('--fontColor', '#000');
-document.documentElement.style.setProperty('--fontColorida', '#0D3444');
-
-document.documentElement.style.setProperty('--imagemlogo', 'url(/images/logo_traveller_fundo_transparente.png)');
-    }
+    var conteudoTotal = '<head><title>Gulliver Traveller - Roteiros</title></head><body><b>->1 - Roteiros para *São Paulo*</b><br>A Terra da Garoa!<br>Fundada em 25 de janeiro de 1554 a cidade tem hoje cerca de 12 milhões de habitantes e é considerada o centro financeiro do Brasil e aqui vão 3 dicas de roteiros obrigatórios para aqueles que passam pela capital paulista<br>#Roteiro A | Região: Avenida Paulista<br>MASP; Parque Trianon; Rua Augusta<br>#Roteiro B | Região: Centro<br>Catedral da Sé; Pátio do Colégio; Rua Augusta<br>#Roteiro C | Região: Vila Madalena<br>Beco do Batman; Feirinha da Benedito Calixto; Livraria da Vila<br> <b>->2 - Roteiros para *Las Vegas*</b><br>Viva Las Vegas!<br>       A cidade mais populosa e mais densamente povoada do estado de Nevada, Las Vegas foi fundada em 1905 e é considerada uma cidade, oficialmente, desde 1911 e conta com mais de meio milhão de habitantes. Venha conhecer a capital dos jogos de azar!<br class="roteiro">#Roteiro A | Região: Las Vegas Boulevard South<br>Fonte do Bellagio; Principais Cassinos; Madame Tussauds<br>#Roteiro B | Região: Downtown<br>; Fremont; Las Vegas Art Museum; Museu nacional do Crime Organizado; <br>#Roteiro C | Região: Las Vegas Boulevard North<br>Outlet Premium North; Stratosphere; Apple Fashion Show<br><b>->3 - Roteiros para *Moscou*</b><br>Privet!<br>A capital Russa fica situada às margens do Rio Moscou e apesar de ser a cidade mais cosmopolita da Rússia, conta com grande resguardo de sua história soviética<br>#Roteiro A | Região: Praça Vermelha<br>Museu Histórico do Estado; Catedral de São Basílico; Mausoléu de Lênin<br>#Roteiro B | Região: Centro<br>Teatro Bolshoi; Monumento a Karl Marx; Rio Moscou<br>#Roteiro C | Região: Obras pela cidade<br>Metrô de Moscou; As Sete Irmãs; Moscow Leningradsky Railway Station  <br> </body>';
 
 
 
-// Controle de fontes
 
-function fonteAcessivel () {
-    document.documentElement.style.setProperty('--fontPadrao', 'Times New Roman');
+    var extCidades = conteudoTotal.split("*")[1] + " / " + conteudoTotal.split("*")[3] + " / " + conteudoTotal.split("*")[5];
+    var extRoteiroA = conteudoTotal.split("#")[1] + "<br/> <br/>" + conteudoTotal.split("#")[4] + "<br/> <br/>" + conteudoTotal.split("#")[7];
+    var countExtLocalSaoPaulo = extRoteiroA.split("|")[1].split(";").length;
+    var countExtLocalLasVegas = extRoteiroA.split("|")[2].split(";").length;
+    var countExtLocalMoscou = extRoteiroA.split("|")[3].split(";").length;
+    var extCentroSP = conteudoTotal.split("#Roteiro B | Região: Centro")[1].split("#")[0];
+    var extDownTownLA = conteudoTotal.split("#Roteiro B | Região: Downtown<br>;")[1].split("#")[0];
+    var extDownTownLAClear = extDownTownLA.substring(
+        extDownTownLA.indexOf(1),
+        extDownTownLA.lastIndexOf(";")
+    )
 
-}
+    document.getElementById("conteudoGeral").innerHTML = "Cidades<br/>" + extCidades + "<br/> <br/> Roteiros A<br/>" + extRoteiroA + "<br/> <br/>Quantidade Locais <br/>" + "Locais na cidade de São Paulo: " + countExtLocalSaoPaulo + "<br/>Locais na cidade de Las Vegas: " + countExtLocalLasVegas + "<br/>Locais na cidade de Moscou: " + countExtLocalMoscou + "<br/> <br/>Pontos turísticos localizados no bairro Centro da cidade de São Paulo" + extCentroSP + "<br/> <br/>Pontos turísticos localizados no bairro Downtown na cidade de Los Angeles <br/>" + extDownTownLAClear
 
-function fontePadrao () {
-    document.documentElement.style.setProperty('--fontPadrao', "'Inter', sans-serif");
 
 }
